@@ -4,9 +4,7 @@ import CustomerItem from "./CustomerItem";
 import api from "../apis/api";
 import AppContext from '../contexts/search'
 
-function fetchData(id) {
-  return api.get(`/products/${id}?offset=0&limit=5`);
-}
+
 
 function Customer(props) {
   const [customers, setCustomers] = useState([]);
@@ -42,6 +40,10 @@ function Customer(props) {
       </ul>
     </div>
   );
+}
+
+function fetchData(id) {
+  return api.get(`/products/${id}?offset=0&limit=5`);
 }
 
 Customer.propTypes = {
