@@ -1,4 +1,3 @@
-#  coding solution 
 
 Technology use:  React
 
